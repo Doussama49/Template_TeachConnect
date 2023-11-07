@@ -1,0 +1,39 @@
+<div class="bg">
+
+</div>
+<div class="center">
+  <div class="container-account">
+    <div class="left-section">
+
+      <div [routerLink]="['/']" class="logo">
+        <img src="assets/logoBlack.png" alt="logo">
+
+      </div>
+
+      <div class="description">
+        <p>Bienvenue sur notre plateforme éducative ! Découvrez nos fonctionnalités innovantes conçues pour faciliter
+          l'apprentissage et l'enseignement. Rejoignez notre communauté dès aujourd'hui et transformez votre expérience
+          éducative.</p>
+      </div>
+
+    </div>
+
+    <div class="right-section">
+      <div class="content">
+        <h1 class="title">Bienvenue</h1>
+        <div class="description">
+          <p>Retrouvez l’ensemble de vos services sur TeachConnect.</p>
+          <br>
+        </div>
+        <button type="submit" [class]="'submit ' "><span [routerLink]="['/users/login']"> Connectez vous
+          </span></button>
+
+      </div>
+
+
+      <router-outlet></router-outlet>
+
+
+    </div>
+  </div>
+</div>

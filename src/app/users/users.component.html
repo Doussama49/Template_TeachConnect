@@ -1,0 +1,30 @@
+<div class="bg">
+
+</div>
+<div class="center">
+  <div class="container-account">
+    <div class="left-section">
+
+      <div [routerLink]="['/']"  class="logo">
+        <img src="assets/logoBlack.png" alt="logo">
+      </div>
+
+      <div class="description">
+        <p>Bienvenue sur notre plateforme éducative ! Connectez-vous à votre compte pour accéder à nos fonctionnalités exclusives. Si vous n'avez pas encore de compte, vous pouvez vous inscrire gratuitement et commencer votre parcours éducatif avec nous. Rejoignez-nous dès maintenant et explorez un monde d'apprentissage innovant.</p>
+
+      </div>
+
+    </div>
+
+    <div class="right-section">
+      <div [routerLink]="['/']" class="logo-mobile">
+        <img src="assets/logoBlack.png" />
+      </div>
+
+
+      <router-outlet></router-outlet>
+
+
+    </div>
+  </div>
+</div>

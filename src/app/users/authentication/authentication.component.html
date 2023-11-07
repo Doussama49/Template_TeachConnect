@@ -1,0 +1,23 @@
+<h1 class="title">Connectez vous</h1>
+<div class="content">
+  <form class="user-form" [formGroup]="loginForm">
+    <div class="field">
+      <label for="email">Email </label>
+      <input class="form-control" type="email" id="email" name="email" formControlName="email" required>
+    </div>
+
+    <div class="field">
+      <label for="mot-de-passe">Mot de passe </label>
+      <input class="form-control" type="password" id="mot-de-passe" name="mot-de-passe" formControlName="password" required>
+    </div>
+    <button type="submit" class="submit" (click)="login()">Je me connecte</button>
+  </form>
+  <div class="bottom-description">
+    <p> Vous n'avez pas de compte ?  <span [routerLink]="['/users/create']"> Inscrivez vous rapidement ! </span></p>
+  </div>
+
+  <div *ngIf="userError.isError()" class="error-message">
+    <p>{{userError.getMessage()}}</p>
+  </div>
+</div>
+<router-outlet></router-outlet>
